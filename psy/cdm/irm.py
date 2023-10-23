@@ -18,16 +18,16 @@ class Dina(object):
 
     @cached_property
     def item_size(self):
-        # 题量
+        # Item size
         return self._attrs.shape[1]
 
     @cached_property
     def _skills_size(self):
-        # 被试技能数量，也是试题属性数量
+        # The number of skills being tested is also the number of attributes of question.
         return self._attrs.shape[0]
 
     def get_yita(self, skills):
-        # dina模型下的yita值
+        # yita value under the DINA model
         _yita = np.dot(skills, self._attrs)
         _aa = np.sum(self._attrs * self._attrs, axis=0)
         _yita[_yita < _aa] = 0
@@ -36,11 +36,11 @@ class Dina(object):
 
     @staticmethod
     def _get_p(yita, no_slip, guess):
-        # dina模型下的答题正确的概率值
+        # probability of correct response under the DINA model
         return no_slip ** yita * guess ** (1 - yita)
 
     def get_p(self, yita, no_slip, guess):
-        # 答对的概率值
+        # probability of correct response under the DINA model
         p_val = self._get_p(yita, no_slip, guess)
         p_val[p_val <= 0] = 1e-10
         p_val[p_val >= 1] = 1 - 1e-10
@@ -50,14 +50,14 @@ class Dina(object):
 class BaseEmDina(Dina):
 
     def _loglik(self, p_val):
-        # dina模型的对数似然函数
+        # log-likelihood of DINA model
         log_p_val = np.log(p_val)
         log_q_val = np.log(1 - p_val)
         score = self._score
         return np.dot(log_p_val, score.transpose()) + np.dot(log_q_val, (1 - score).transpose())
 
     def _get_all_skills(self):
-        # 获得所有可能被试技能的排列组合
+        # Get all possible combi and permutation of tested skills
         size = self._skills_size
         return np.array(list(product([0, 1], repeat=size)))
 
@@ -70,7 +70,7 @@ class MlDina(BaseEmDina):
         self._no_slip = no_slip
 
     def solve(self):
-        # 已知项目参数下的被试技能极大似然估计求解
+        # MLE of student skills under known parameters
         skills = self._get_all_skills()
         yita = self.get_yita(skills)
         p_val = self.get_p(yita, self._no_slip, self._guess)
@@ -89,21 +89,21 @@ class EmDina(BaseEmDina):
         self._tol = tol
 
     def _posterior(self, p_val):
-        # 后验似然函数
+        # posterior-likelihood function
         return np.exp(self._loglik(p_val) + 1.0 / p_val.shape[0])
 
     def _posterior_normalize(self, p_val):
-        # 这个主要是起归一化的作用
+        # for normalization
         posterior = self._posterior(p_val)
         return posterior / np.sum(posterior, axis=0)
 
     @staticmethod
     def _skill_dis(posterior_normalize):
-        # 每种技能组合的人数分布
+        # distribution of subject per skill combination
         return np.sum(posterior_normalize, axis=1)
 
     def _get_init_yita_item_dis(self, posterior_normalize):
-        # 每道题都搞个人数分布，1是0的复制，0用于yita为0情况，1个用于yita为1情况
+        # For each qn, the no. of ppl is distributed. 1 is a copy of 0. 0 is used when yita is 0. 1 is used when yita is 1
         yita_item_dis_0 = np.repeat(self._skill_dis(posterior_normalize), self.item_size)
         yita_item_dis_0.shape = posterior_normalize.shape[0], self.item_size
         yita_item_dis_1 = yita_item_dis_0.copy()
@@ -122,7 +122,7 @@ class EmDina(BaseEmDina):
             post_normalize = self._posterior_normalize(p_val)
             yita_item_dis_0, yita_item_dis_1 = self._get_init_yita_item_dis(post_normalize)
 
-            # 回答正确的归一化数, 1是0的复制，0用于yita为0情况，1用于yita为1情况
+            # Return the correct normalized number. 1 is a copy of 0. 0 is used when yita is 0. 1 is used when yita is 1
             yita_item1_post_normalize_0 = np.dot(post_normalize, score)
             yita_item1_post_normalize_1 = yita_item1_post_normalize_0.copy()
 
@@ -145,18 +145,18 @@ class EmDina(BaseEmDina):
     def _get_yita_item_dis(yita_item_dis_0, yita_item1_post_normalize_0, yita_item_dis_1,
                            yita_item1_post_normalize_1, yita_val):
         yita_item_dis_0[yita_val == 1] = 0
-        # yita值为0的人数分布
+        # distribution of ppl for yita=0
         yita0_item_dis = np.sum(yita_item_dis_0, axis=0)
         yita0_item_dis[yita0_item_dis <= 0] = 1e-10
         yita_item1_post_normalize_0[yita_val == 1] = 0
-        # yita值为0回答正确的人数分布
+        # distribution of ppl who answered correctly when yita=0
         yita0_item1_dis = np.sum(yita_item1_post_normalize_0, axis=0)
 
         yita_item_dis_1[yita_val == 0] = 0
-        # yita值为1的人数分布
+        # distribution of ppl for yita=1
         yita1_item_dis = np.sum(yita_item_dis_1, axis=0)
         yita_item1_post_normalize_1[yita_val == 0] = 0
-        # yita值为1回答正确的人数分布
+        # distribution of ppl who answered correctly when yita=1
         yita1_item1_dis = np.sum(yita_item1_post_normalize_1, axis=0)
         return yita0_item1_dis, yita0_item_dis, yita1_item1_dis, yita1_item_dis
 

@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
+# # -*- coding: utf-8 -*-
 
-__author__ = """chris dai"""
-__email__ = 'inuyasha021@163.com'
-__version__ = '0.0.1'
+# __author__ = """chris dai"""
+# __email__ = 'inuyasha021@163.com'
+# __version__ = '0.0.1'
 
 from psy.cdm.irm import McmcHoDina, McmcDina, EmDina, MlDina
 from psy.irt.irm import Mirt, Irt
