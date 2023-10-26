@@ -1,0 +1,167 @@
+Topic,Subtopic,Item ID,Subtopic ID,Level,Level ID,Band,Node
+Introduction to Psychology,What is Psychology? ,101001,S01,Remembering,1,Band1,Node01
+Introduction to Psychology,What is Psychology? ,101002,S01,Understanding,2,Band1,Node01
+Introduction to Psychology,What is Psychology? ,101003,S01,Understanding,2,Band1,Node01
+Introduction to Psychology,What is Psychology? ,101004,S01,Understanding,2,Band1,Node01
+Introduction to Psychology,What is Psychology? ,101005,S01,Applying,3,Band1,Node01
+Introduction to Psychology,Psychological Perspectives,102001,S02,Remembering,1,Band1,Node02
+Introduction to Psychology,Psychological Perspectives,102002,S02,Remembering,1,Band1,Node02
+Introduction to Psychology,Psychological Perspectives,102003,S02,Remembering,1,Band1,Node02
+Introduction to Psychology,Psychological Perspectives,102004,S02,Understanding,2,Band1,Node02
+Introduction to Psychology,Psychological Perspectives,102005,S02,Understanding,2,Band1,Node02
+Introduction to Psychology,Psychological Perspectives,102006,S02,Understanding,2,Band1,Node02
+Introduction to Psychology,Psychological Perspectives,102007,S02,Understanding,2,Band1,Node02
+Introduction to Psychology,Psychological Perspectives,102008,S02,Applying,3,Band1,Node02
+Introduction to Psychology,Psychological Perspectives,102009,S02,Applying,3,Band1,Node02
+Psychological Research,Science of Psychology,203001,S03,Remembering,1,Band2,Node03
+Psychological Research,Science of Psychology,203002,S03,Remembering,1,Band2,Node03
+Psychological Research,Science of Psychology,203003,S03,Remembering,1,Band2,Node03
+Psychological Research,Science of Psychology,203004,S03,Understanding,2,Band2,Node03
+Psychological Research,Science of Psychology,203005,S03,Understanding,2,Band2,Node03
+Psychological Research,Science of Psychology,203006,S03,Understanding,2,Band2,Node03
+Psychological Research,Science of Psychology,203007,S03,Applying,3,Band2,Node03
+Psychological Research,Science of Psychology,203008,S03,Applying,3,Band2,Node03
+Psychological Research,Science of Psychology,203009,S03,Remembering,1,Band2,Node03
+Psychological Research,Experimental Method,204001,S04,Remembering,1,Band2,Node04
+Psychological Research,Experimental Method,204002,S04,Remembering,1,Band2,Node04
+Psychological Research,Experimental Method,204003,S04,Remembering,1,Band2,Node04
+Psychological Research,Experimental Method,204004,S04,Understanding,2,Band2,Node04
+Psychological Research,Experimental Method,204005,S04,Understanding,2,Band2,Node04
+Psychological Research,Experimental Method,204006,S04,Understanding,2,Band2,Node04
+Psychological Research,Experimental Method,204007,S04,Understanding,2,Band2,Node04
+Psychological Research,Experimental Method,204008,S04,Understanding,2,Band2,Node04
+Psychological Research,Experimental Method,204009,S04,Applying,3,Band2,Node04
+Psychological Research,Experimental Method,204010,S04,Applying,3,Band2,Node04
+Psychological Research,Experimental Method,204011,S04,Applying,3,Band2,Node04
+Psychological Research,Research Ethics,205001,S05,Remembering,1,Band2,Node05
+Psychological Research,Research Ethics,205002,S05,Remembering,1,Band2,Node05
+Psychological Research,Research Ethics,205003,S05,Remembering,1,Band2,Node05
+Psychological Research,Research Ethics,205004,S05,Understanding,2,Band2,Node05
+Psychological Research,Research Ethics,205005,S05,Understanding,2,Band2,Node05
+Psychological Research,Research Ethics,205006,S05,Applying,3,Band2,Node05
+Psychological Research,APA Referencing ,206001,S06,Remembering,1,Band2,Node06
+Psychological Research,APA Referencing ,206002,S06,Remembering,1,Band2,Node06
+Psychological Research,APA Referencing ,206003,S06,Remembering,1,Band2,Node06
+Psychological Research,APA Referencing ,206004,S06,Remembering,1,Band2,Node06
+Psychological Research,APA Referencing ,206005,S06,Understanding,2,Band2,Node06
+Psychological Research,APA Referencing ,206006,S06,Understanding,2,Band2,Node06
+Psychological Research,APA Referencing ,206007,S06,Understanding,2,Band2,Node06
+Psychological Research,APA Referencing ,206008,S06,Applying,3,Band2,Node06
+Psychological Research,APA Referencing ,206009,S06,Applying,3,Band2,Node06
+Psychological Research,APA Referencing ,206010,S06,Applying,3,Band2,Node06
+Psychological Research,APA Referencing ,206011,S06,Applying,3,Band2,Node06
+Psychological Research,APA Referencing ,206012,S06,Applying,3,Band2,Node06
+Biological Bases,Neurons and Neurotransmitters ,307001,S07,Remembering,1,Band3,Node07
+Biological Bases,Neurons and Neurotransmitters ,307002,S07,Remembering,1,Band3,Node07
+Biological Bases,Neurons and Neurotransmitters ,307003,S07,Remembering,1,Band3,Node07
+Biological Bases,Neurons and Neurotransmitters ,307004,S07,Understanding,2,Band3,Node07
+Biological Bases,Neurons and Neurotransmitters ,307005,S07,Understanding,2,Band3,Node07
+Biological Bases,Neurons and Neurotransmitters ,307006,S07,Understanding,2,Band3,Node07
+Biological Bases,Neurons and Neurotransmitters ,307007,S07,Understanding,2,Band3,Node07
+Biological Bases,Neurons and Neurotransmitters ,307008,S07,Applying,3,Band3,Node07
+Biological Bases,Neurons and Neurotransmitters ,307009,S07,Applying,3,Band3,Node07
+Biological Bases,Nervous System,308001,S08,Remembering,1,Band3,Node08
+Biological Bases,Nervous System,308002,S08,Remembering,1,Band3,Node08
+Biological Bases,Nervous System,308003,S08,Remembering,1,Band3,Node08
+Biological Bases,Nervous System,308004,S08,Understanding,2,Band3,Node08
+Biological Bases,Nervous System,308005,S08,Understanding,2,Band3,Node08
+Biological Bases,Nervous System,308006,S08,Understanding,2,Band3,Node08
+Biological Bases,Nervous System,308007,S08,Understanding,2,Band3,Node08
+Biological Bases,Nervous System,308008,S08,Applying,3,Band3,Node08
+Biological Bases,Nervous System,308009,S08,Applying,3,Band3,Node08
+Biological Bases,Nervous System,308010,S08,Applying,3,Band3,Node08
+Biological Bases,The Cerebrum,309001,S09,Remembering,1,Band3,Node09
+Biological Bases,The Cerebrum,309002,S09,Remembering,1,Band3,Node09
+Biological Bases,The Cerebrum,309003,S09,Remembering,1,Band3,Node09
+Biological Bases,The Cerebrum,309004,S09,Understanding,2,Band3,Node09
+Biological Bases,The Cerebrum,309005,S09,Understanding,2,Band3,Node09
+Biological Bases,The Cerebrum,309006,S09,Understanding,2,Band3,Node09
+Biological Bases,The Cerebrum,309007,S09,Understanding,2,Band3,Node09
+Biological Bases,The Cerebrum,309008,S09,Applying,3,Band3,Node09
+Biological Bases,The Cerebrum,309009,S09,Applying,3,Band3,Node09
+Biological Bases,The Cerebrum,309010,S09,Applying,3,Band3,Node09
+Biological Bases,The Cerebrum,309011,S09,Applying,3,Band3,Node09
+Biological Bases,The Cerebrum,309012,S09,Applying,3,Band3,Node09
+Sensation & Perception,Sensation,410001,S10,Remembering,1,Band4,Node10
+Sensation & Perception,Sensation,410002,S10,Remembering,1,Band4,Node10
+Sensation & Perception,Sensation,410003,S10,Remembering,1,Band4,Node10
+Sensation & Perception,Sensation,410004,S10,Understanding,2,Band4,Node10
+Sensation & Perception,Sensation,410005,S10,Understanding,2,Band4,Node10
+Sensation & Perception,Sensation,410006,S10,Understanding,2,Band4,Node10
+Sensation & Perception,Sensation,410007,S10,Understanding,2,Band4,Node10
+Sensation & Perception,Sensation,410008,S10,Applying,3,Band4,Node10
+Sensation & Perception,Sensation,410009,S10,Applying,3,Band4,Node10
+Sensation & Perception,Sensation,410010,S10,Applying,3,Band4,Node10
+Sensation & Perception,Perception,411001,S11,Remembering,1,Band4,Node11
+Sensation & Perception,Perception,411002,S11,Remembering,1,Band4,Node11
+Sensation & Perception,Perception,411003,S11,Remembering,1,Band4,Node11
+Sensation & Perception,Perception,411004,S11,Remembering,1,Band4,Node11
+Sensation & Perception,Perception,411005,S11,Understanding,2,Band4,Node11
+Sensation & Perception,Perception,411006,S11,Understanding,2,Band4,Node11
+Sensation & Perception,Perception,411007,S11,Understanding,2,Band4,Node11
+Sensation & Perception,Perception,411008,S11,Applying,3,Band4,Node11
+Sensation & Perception,Perception,411009,S11,Applying,3,Band4,Node11
+Sensation & Perception,Perception,411010,S11,Applying,3,Band4,Node11
+Sensation & Perception,Perception,411011,S11,Applying,3,Band4,Node11
+Memory,Structure and Function,512001,S12,Remembering,1,Band5,Node12
+Memory,Structure and Function,512002,S12,Remembering,1,Band5,Node12
+Memory,Structure and Function,512003,S12,Remembering,1,Band5,Node12
+Memory,Structure and Function,512004,S12,Remembering,1,Band5,Node12
+Memory,Structure and Function,512005,S12,Understanding,2,Band5,Node12
+Memory,Structure and Function,512006,S12,Understanding,2,Band5,Node12
+Memory,Structure and Function,512007,S12,Understanding,2,Band5,Node12
+Memory,Structure and Function,512008,S12,Understanding,2,Band5,Node12
+Memory,Structure and Function,512009,S12,Applying,3,Band5,Node12
+Memory,Structure and Function,512010,S12,Applying,3,Band5,Node12
+Memory,Structure and Function,512011,S12,Applying,3,Band5,Node12
+Memory,Encoding and Retrieval,513001,S13,Remembering,1,Band5,Node13
+Memory,Encoding and Retrieval,513002,S13,Remembering,1,Band5,Node13
+Memory,Encoding and Retrieval,513003,S13,Remembering,1,Band5,Node13
+Memory,Encoding and Retrieval,513004,S13,Remembering,1,Band5,Node13
+Memory,Encoding and Retrieval,513005,S13,Understanding,2,Band5,Node13
+Memory,Encoding and Retrieval,513006,S13,Understanding,2,Band5,Node13
+Memory,Encoding and Retrieval,513007,S13,Understanding,2,Band5,Node13
+Memory,Encoding and Retrieval,513008,S13,Applying,3,Band5,Node13
+Memory,Encoding and Retrieval,513009,S13,Applying,3,Band5,Node13
+Memory,Encoding and Retrieval,513010,S13,Applying,3,Band5,Node13
+Memory,Forgetting and Memory Errors,514001,S14,Remembering,1,Band5,Node14
+Memory,Forgetting and Memory Errors,514002,S14,Remembering,1,Band5,Node14
+Memory,Forgetting and Memory Errors,514003,S14,Remembering,1,Band5,Node14
+Memory,Forgetting and Memory Errors,514004,S14,Understanding,2,Band5,Node14
+Memory,Forgetting and Memory Errors,514005,S14,Understanding,2,Band5,Node14
+Memory,Forgetting and Memory Errors,514006,S14,Understanding,2,Band5,Node14
+Memory,Forgetting and Memory Errors,514007,S14,Understanding,2,Band5,Node14
+Memory,Forgetting and Memory Errors,514008,S14,Applying,3,Band5,Node14
+Memory,Forgetting and Memory Errors,514009,S14,Applying,3,Band5,Node14
+Memory,Forgetting and Memory Errors,514010,S14,Applying,3,Band5,Node14
+Memory,Forgetting and Memory Errors,514011,S14,Applying,3,Band5,Node14
+Thinking & Intelligence,Concept Representation,615001,S15,Remembering,1,Band6,Node15
+Thinking & Intelligence,Concept Representation,615002,S15,Remembering,1,Band6,Node15
+Thinking & Intelligence,Concept Representation,615003,S15,Remembering,1,Band6,Node15
+Thinking & Intelligence,Concept Representation,615004,S15,Understanding,2,Band6,Node15
+Thinking & Intelligence,Concept Representation,615005,S15,Understanding,2,Band6,Node15
+Thinking & Intelligence,Concept Representation,615006,S15,Understanding,2,Band6,Node15
+Thinking & Intelligence,Concept Representation,615007,S15,Applying,3,Band6,Node15
+Thinking & Intelligence,Concept Representation,615008,S15,Applying,3,Band6,Node15
+Thinking & Intelligence,Concept Representation,615009,S15,Applying,3,Band6,Node15
+Thinking & Intelligence,Intelligence,616001,S16,Remembering,1,Band6,Node16
+Thinking & Intelligence,Intelligence,616002,S16,Remembering,1,Band6,Node16
+Thinking & Intelligence,Intelligence,616003,S16,Remembering,1,Band6,Node16
+Thinking & Intelligence,Intelligence,616004,S16,Understanding,2,Band6,Node16
+Thinking & Intelligence,Intelligence,616005,S16,Understanding,2,Band6,Node16
+Thinking & Intelligence,Intelligence,616006,S16,Understanding,2,Band6,Node16
+Thinking & Intelligence,Intelligence,616007,S16,Understanding,2,Band6,Node16
+Thinking & Intelligence,Intelligence,616008,S16,Applying,3,Band6,Node16
+Thinking & Intelligence,Intelligence,616009,S16,Applying,3,Band6,Node16
+Thinking & Intelligence,Intelligence,616010,S16,Applying,3,Band6,Node16
+Thinking & Intelligence,Intelligence,616011,S16,Applying,3,Band6,Node16
+Thinking & Intelligence,Problem Solving,617001,S17,Remembering,1,Band6,Node17
+Thinking & Intelligence,Problem Solving,617002,S17,Remembering,1,Band6,Node17
+Thinking & Intelligence,Problem Solving,617003,S17,Remembering,1,Band6,Node17
+Thinking & Intelligence,Problem Solving,617004,S17,Understanding,2,Band6,Node17
+Thinking & Intelligence,Problem Solving,617005,S17,Understanding,2,Band6,Node17
+Thinking & Intelligence,Problem Solving,617006,S17,Understanding,2,Band6,Node17
+Thinking & Intelligence,Problem Solving,617007,S17,Applying,3,Band6,Node17
+Thinking & Intelligence,Problem Solving,617008,S17,Applying,3,Band6,Node17
+Thinking & Intelligence,Problem Solving,617009,S17,Applying,3,Band6,Node17
+Thinking & Intelligence,Problem Solving,617010,S17,Applying,3,Band6,Node17

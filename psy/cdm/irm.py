@@ -118,24 +118,30 @@ class EmDina(BaseEmDina):
         guess = self._guess_init
         no_slip = self._no_slip_init
         for i in range(max_iter):
+            print('iter', i)
             p_val = self.get_p(yita_val, no_slip, guess)
             post_normalize = self._posterior_normalize(p_val)
             yita_item_dis_0, yita_item_dis_1 = self._get_init_yita_item_dis(post_normalize)
 
+            print('1')
             # Return the correct normalized number. 1 is a copy of 0. 0 is used when yita is 0. 1 is used when yita is 1
             yita_item1_post_normalize_0 = np.dot(post_normalize, score)
+            print('2')
             yita_item1_post_normalize_1 = yita_item1_post_normalize_0.copy()
-
+            print('3')
             yita0_item1_dis, yita0_item_dis, yita1_item1_dis, yita1_item_dis = self._get_yita_item_dis(
                 yita_item_dis_0, yita_item1_post_normalize_0, yita_item_dis_1, yita_item1_post_normalize_1, yita_val
             )
-
+            print('4')
             guess_temp = self._get_est_guess(yita0_item1_dis, yita0_item_dis)
             no_slip_temp = self._get_est_no_slip(yita1_item1_dis, yita1_item_dis)
-
+            print('5')
             if max(np.max(np.abs(guess - guess_temp)), np.max(np.abs(no_slip - no_slip_temp))) < tol:
+                print('Convergence')
                 return no_slip_temp, guess_temp
-
+            print('6')
+            print('guess', guess_temp)
+            print('no_slip', no_slip_temp)
             no_slip = no_slip_temp
             guess = guess_temp
 
